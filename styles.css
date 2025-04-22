@@ -326,9 +326,7 @@ h3 {
 }
 
 /**formulario de contacto **/
-.form-contact{
 
-}
 
 .container-contact {
   display: flex;
@@ -606,10 +604,18 @@ button:hover {
   .container {
     flex-direction: column;
   }
-
+  .hero-content{
+    top: 90px;
+  }
   .row {
     flex-direction: column;
   }
+  .social-icons {
+   
+   
+    display: flex
+;
+}
 }
 
 

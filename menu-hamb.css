@@ -64,7 +64,11 @@
     .menu-hamburguesa ul li {
         margin: 1rem 0;
     }
-
+    nav ul li a:hover {
+        color: #e74c3c;
+          width: 100%;
+          height: 100%;
+    }
     .menu-hamburguesa ul li a {
         color: #fff;
         text-decoration: none;
