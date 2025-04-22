@@ -6,20 +6,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Rico Sabor</title>
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="menu-hamb.css">
 </head>
 
 <body>
   <section class="hero">
 
-  <nav class="navbar">
-    <img src="./img/IMG-20250408-WA0004.jpg" alt="Rico Sabor" class="logo" width="80" height="80">
-    <ul>
-      <li><a href="index.html">Inicio</a></li>
-      <li><a href="index-galeria.html.html">Galeria</a></li>
-      <li><a href="#">Quienes Somos </a></li>
-      <li><a href="#">Contacto</a></li>
-    </ul>
-  </nav>
+    <nav class="navbar">
+      <img src="./img/IMG-20250408-WA0004.jpg" alt="Rico Sabor" class="logo" width="80" height="80">
+    
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="index-galeria.html">Galería</a></li>
+        <li><a href="#">Quienes Somos</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    
+      <div class="menu-icon" id="menu-icon">
+        <i class="fas fa-bars"></i>
+      </div>
+    </nav>
+    
+    <!-- Menú hamburguesa -->
+    <div class="menu-hamburguesa" id="menu-hamburguesa">
+      <i class="fa-solid fa-x" id="cerrar-menu"></i>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="index-galeria.html">Galería</a></li>
+        <li><a href="#">Quienes Somos</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </div>
   <!-- Hero -->
   
   <div class="hero-content">
@@ -63,7 +80,8 @@
       </div>
       <div class="card">
         <video class="card-img"
-          src="https://videos.pexels.com/video-files/19233939/19233939-uhd_2560_1440_30fps.mp4"></video>
+          src="https://videos.pexels.com/video-files/19233939/19233939-uhd_2560_1440_30fps.mp4">
+        </video>
 
         <h3>Videos y producciones para llevar la cumbia a tu contenido digital</h3>
         <p>Creamos experiencias únicas en bodas, fiestas y celebraciones especiales.</p>
@@ -86,10 +104,10 @@
                 <img src="https://picsum.photos/id/1015/400/300" alt="1">
               </a>
             </div>
-            <div class="carousel-slide"><a href="pagina.html"><img src="https://picsum.photos/id/1025/400/300" alt="2"></a></div>
-            <div class="carousel-slide"><a href="pagina.html"></a><img src="https://picsum.photos/id/1035/400/300" alt="3"></a></div>
-            <div class="carousel-slide"><a href="pagina.html"></a><img src="https://picsum.photos/id/1045/400/300" alt="4"></a></div>
-            <div class="carousel-slide"><a href="pagina.html"></a><img src="https://picsum.photos/id/1055/400/300" alt="5"></a></div>
+            <div class="carousel-slide"><a href="index-galeria.html.html"><img src="https://picsum.photos/id/1025/400/300" alt="2"></a></div>
+            <div class="carousel-slide"><a href="index-galeria.html.html"></a><img src="https://picsum.photos/id/1035/400/300" alt="3"></a></div>
+            <div class="carousel-slide"><a href="index-galeria.html.html"></a><img src="https://picsum.photos/id/1045/400/300" alt="4"></a></div>
+            <div class="carousel-slide"><a href="index-galeria.html.html"></a><img src="https://picsum.photos/id/1055/400/300" alt="5"></a></div>
           </div>
         </div>
         <button class="carousel-button next">&#10095;</button>
@@ -122,7 +140,7 @@
   <section class="form-contact">
     <div class="container-contact">
       <div class="contact-info">
-        <h2>Contacto</h2>
+        
         <h1>Contáctanos</h1>
         <p>Estamos aquí para responder tus preguntas y solicitudes.</p>
         <ul>
@@ -155,7 +173,7 @@
           <label><input type="radio" name="description" /> Despedida de Año</label>
           <label><input type="radio" name="description" /> Other</label>
         </fieldset>
-        <textarea placeholder="Type your message" required></textarea>
+        <textarea placeholder="Escribe Tu Mensaje" required></textarea>
         
         <button type="submit" class="button2">Enviar</button>
       </form>
@@ -222,8 +240,11 @@
     </div>
   </footer>
 
+
+   
   <script src="script.js"></script>
   <script src="https://kit.fontawesome.com/9c91d36df0.js" crossorigin="anonymous"></script>
+  <script src="menu-hamb.js"></script>
 </body>
 
 </html>

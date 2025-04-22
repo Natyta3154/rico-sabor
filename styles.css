@@ -1,3 +1,9 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -9,7 +15,7 @@ body {
   justify-content: space-around;
   align-items: center;
   box-shadow: #000000 10px 2px 5px;
-  background-color: black;
+  background-color: rgb(145, 11, 115);
   width: 100%;
   margin: 0 auto;
   padding: 0.2rem;
@@ -38,8 +44,7 @@ body {
 
 .navbar ul li , .footer-nav a  {
   display: inline;
-  background: rgb(145, 11, 115);
-  background: linear-gradient(339deg, rgba(145, 11, 115, 0.8407738095238095) 15%, rgba(201, 151, 40, 1) 35%, rgba(147, 3, 103, 1) 59%, rgba(191, 106, 36, 1) 72%);
+  
   border-radius: 5px;
   padding: 5px 10px;
   transition: background-color 0.3s ease;
@@ -58,7 +63,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-color: black;
+color: #e74c3c;
   width: 100%;
   height: 100%;
  
@@ -103,17 +108,19 @@ color: black;
       align-items: center;
 }
 .hero p {
+  width: 50%;
   margin: 20px 0;
 }
 
 .hero-content button {
-  padding: 10px 20px;
-  font-weight: bold;
-  background: #fff;
-  color: #111;
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
   border: none;
-  border-radius: 5px;
+  background-color: #e74c3c;
+  color: white;
+  border-radius: 8px;
   cursor: pointer;
+  transition: background-color 0.3s;
 }
 
 /*Descripción */
@@ -182,7 +189,8 @@ h3 {
 }
 
 .card-img {
-  height: 240px;
+  width: 100%;
+  height: auto;
   background: #ddd;
   margin-bottom: 10px;
   border-radius: 15px;
@@ -203,7 +211,8 @@ h3 {
   position: relative;
 }
 
-
+.w-100 {
+  height: auto !important;}
 .carousel {
   position: relative;
   overflow: hidden;
@@ -318,7 +327,7 @@ h3 {
 
 /**formulario de contacto **/
 .form-contact{
-  background-image: url(https://images.pexels.com/photos/1190295/pexels-photo-1190295.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1tps://images.pexels.com/photos/29116637/pexels-photo-29116637/free-photo-of-vista-aerea-de-un-pueblo-rural-en-otono.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+
 }
 
 .container-contact {
@@ -394,6 +403,7 @@ h3 {
 
 .select-opcion {
   display: flex;
+  flex-wrap: wrap;
   border: none;
   margin-bottom: 1rem;
 }
@@ -443,7 +453,7 @@ button:hover {
 .footer {
   display: flex;
   flex-wrap: wrap;
-  background-color: #111;
+  background-color: rgb(145, 11, 115);
   color: #fff;
   padding: 40px 20px;
   text-align: center;
@@ -624,6 +634,8 @@ button:hover {
     flex: 0 0 50%;
     /* 2 imágenes en tablets */
   }
+  .w-100 {
+    height: auto !important;
 }
 
 @media (min-width: 900px) {
@@ -631,6 +643,7 @@ button:hover {
     flex: 0 0 33.3333%;
     /* 3 imágenes en pantallas medianas */
   }
+}
 }
 
 @media (min-width: 1200px) {

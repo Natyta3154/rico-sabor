@@ -1,0 +1,83 @@
+.menu-icon {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    cursor: pointer;
+    color: white;
+}
+
+.menu-hamburguesa {
+    display: none;
+}
+
+
+@media(max-width:568px) {
+    .navbar ul {
+        display: none;
+    }
+
+
+    .menu-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        position: relative;
+        left: 4rem;
+    }
+
+
+    .menu-hamburguesa {
+        position: fixed; /* Importante para que quede fijo */
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.95);
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+        overflow: hidden;
+      }
+      
+
+    .menu-hamburguesa ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        justify-content: center;
+        position: relative;
+        bottom: 9rem;
+        left: 5rem;
+        justify-items: end;
+        background: scrolling-text;
+    }
+
+    .menu-hamburguesa ul li {
+        margin: 1rem 0;
+    }
+
+    .menu-hamburguesa ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 1.5rem;
+        transition: all 0.3s ease;
+    }
+
+    #cerrar-menu {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        font-size: 30px;
+        color: #fff;
+        cursor: pointer;
+    }
+}
